@@ -1,0 +1,202 @@
+/**Desktop Version / Desktop Version / Desktop Version / Desktop Version**/
+@media screen and (min-width: 800px) {
+:root, body {
+	--bg-color: #031634;
+	--sec-color: #033649;
+	--txt-color: #e8ddcb;
+	width:100%;
+	height: 97vh;
+    position:fixed;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: var(--bg-color);
+	color: var(--txt-color);
+	font-family: "Segoe UI";
+}
+
+a, a:visited, a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #ceb581;
+}
+
+.landingText0 {
+  width: 47.2vw;
+  height: 90vh;
+  line-height: 90vh;
+  font-size: 16.5vh;
+  font-weight: 700;
+  text-align: center;
+  float: left;
+}
+
+.landingText1 {
+  width: 47.2vw;
+  height: 90vh;
+  line-height: 90vh;
+  font-size: 16.5vh;
+  font-weight: 700;
+  text-align: center;
+  float: right;
+}
+
+.centerText {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	background: #033649;
+	transition: 1.5s;
+}
+
+.centerText:hover {
+	box-shadow: 0px 0px 50px 45px var(--sec-color)
+}
+
+#footerDevider {
+	border-top: 1px solid #033649;
+	width: 99vw;
+	position: absolute;
+}
+
+#pageFooter {
+	width: 98vw;
+	height: 13vh;
+	position: relative;
+	top: 85vh;
+}
+
+#pageFooter-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#footerLink {
+	float: left;
+	margin-left: 15px;
+}
+
+#MadeWith {
+	float: left;
+	text-align: center;
+	font-family: "Segoe UI";
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100vw;
+}
+
+/** Heart Animation  Heart Animation  Heart Animation **/
+#heart {
+	font-size: inherit;
+	display: inline-block;
+	color: #ff0000;
+	animation: beat .65s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes beat {
+	to {transform: scale(1.65);}
+}
+/** Heart Animation  Heart Animation  Heart Animation **/
+
+}
+/**Desktop Version / Desktop Version / Desktop Version / Desktop Version**/
+
+/**Mobile Version / Mobile Version / Mobile Version / Mobile Version**/
+@media screen and (max-width: 800px) {
+:root, body {
+	--bg-color: #031634;
+	--txt-color: #e8ddcb;
+	width:100%;
+	height: 97vh;
+	background-color: var(--bg-color);
+	color: var(--txt-color);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: "Segoe UI";
+}
+
+a, a:visited, a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #ceb581;
+}
+
+.centerText {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	background: #033649;
+	transition: 0.5s;
+}
+
+.centerText:hover {
+	box-shadow: 0px 0px 50px 45px #036564
+}
+
+.landingText0, .landingText1 {
+    font-size: 14vh;
+    font-weight: 700;
+    text-align: center;
+	width: 96.5vw;
+	height: 22vh;
+}
+.landingText0 {
+	padding-top: 22.5vh;
+	padding-bottom: 10vh;
+}
+
+#footerDevider {
+	border-top: 1px solid #033649;
+	width: 96.5vw;
+	position: absolute;
+}
+
+#pageFooter {
+	width: 98vw;
+	height: 8vh;
+	margin-top: 15vh;
+}
+
+#pageFooter-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#footerLink {
+	float: left;
+	margin-left: 15px;
+}
+
+#MadeWith {
+	float: left;
+	text-align: center;
+	font-family: "Segoe UI";
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100vw;
+}
+
+/** Heart Animation  Heart Animation  Heart Animation **/
+#heart {
+	font-size: inherit;
+	display: inline-block;
+	color: #ff0000;
+	animation: beat .65s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes beat {
+	to {transform: scale(1.65);}
+}
+/** Heart Animation  Heart Animation  Heart Animation **/
+
+}
+/**Mobile Version / Mobile Version / Mobile Version / Mobile Version**/

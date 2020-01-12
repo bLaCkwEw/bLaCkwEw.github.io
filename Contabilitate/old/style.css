@@ -1,0 +1,27 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-size: 18px;
+  --balloon-font-size: 14px;
+  --balloon-color: #183DF5; 
+}
+#titluPagina {
+  text-align: center;
+}
+#active {
+  float: left;
+  margin-left: 7.5%;
+}
+#pasive {
+	float: right;
+	margin-right: 7.5%;
+}
+/* Pentru Mobil Pentru Mobil Pentru Mobil*/
+@media screen and (max-width: 850px) {
+	#active, #pasive {
+    width: 100%;
+		float: left;
+		margin-left: 2.5%;
+	}
+}
+/* Pentru Mobil Pentru Mobil Pentru Mobil*/

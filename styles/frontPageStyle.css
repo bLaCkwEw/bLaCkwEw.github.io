@@ -1,66 +1,61 @@
-:root, body, html  {
-	width: 98.3vw;
+:root,
+body,
+html  {
+	margin: 0;
+	width: 102vw;
 	height: 98vh;
 	background: linear-gradient(to right, #1858f9, #4400b3);
 	background-size: 400% 400%;
 	color: #FFFFFF;
 	font-size: 20px;
 	font-family: Tahoma;
-	animation: backgroundColorAnim 10s infinite linear;
+	animation: backgroundColorAnim 30s infinite linear;
 	scroll-behavior: smooth;
-	overflow: hidden;
+	overflow-x: hidden;
+}
+	/* Nav-Bar styling */
+
+.nav {
+	display: grid;
+	width: 100vw;
+	position: fixed;
+	background: black;
 }
 
-.frontPageText {
+	/* The first text that 
+	apperas on the page */
+
+.landingText {
 	margin-top: 30vh;
+	margin-bottom: 110vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
-a, a:hover, a:focus, a:active, a:visited {
+.landingP{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.landingH1 {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+	/* Link decoration */
+a,
+a:hover,
+a:active,
+a:visited {
 	text-decoration: none;
 	color: #FFFFFF;
 }
 
-#frontPageP{
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-#frontPageH1 {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
+	/* Background animation */
 
 @keyframes backgroundColorAnim {
 	0% {background-position: 0% 50%;}
 	50% {background-position: 100% 50%;}
 	100% {background-position: 0% 50%;}
-}
-
-#navArrows {
-	display: none;
-	position: absolute;
-	top: 31vh;
-	right: 7%;
-	text-shadow: 0 0 25px #FFFFFF;
-}
-
-#arrowUP {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	font-size: 2rem;
-	width: 50px;
-	height: 50px;
-}
-
-#arrowDOWN {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	font-size: 2rem;
-	width: 50px;
-	height: 50px;
 }

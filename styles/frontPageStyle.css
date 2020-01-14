@@ -3,7 +3,7 @@ body,
 html  {
 	margin: 0;
 	width: 102vw;
-	height: 98vh;
+	height: 100vh;
 	background: linear-gradient(to right, #1858f9, #4400b3);
 	background-size: 400% 400%;
 	color: #FFFFFF;
@@ -13,13 +13,40 @@ html  {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
+
+	/* Link decoration */
+a,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: 2px underline #FFFFFF;
+	color: #FFFFFF;
+	
+}
+
 	/* Nav-Bar styling */
 
 .nav {
-	display: grid;
-	width: 100vw;
+	display: flex;
+	justify-content: flex-end;
+	width: 102vw;
 	position: fixed;
-	background: black;
+	background: linear-gradient(to right, rgba(6, 51, 172, 0.4), rgba(62, 12, 189, 0.4));
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	font-size: 0;
+}
+
+.aboutMe {
+	border-right: 1px solid #FFFFFF;
+	padding-right: 1vw;
+	font-size: 1rem;
+}
+
+.contactMe {
+	padding-left: 1vw;
+	margin-right: 3vw;
+	font-size: 1rem;
 }
 
 	/* The first text that 
@@ -27,7 +54,7 @@ html  {
 
 .landingText {
 	margin-top: 30vh;
-	margin-bottom: 110vh;
+	margin-bottom: 80vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -43,13 +70,29 @@ html  {
 	align-content: center;
 }
 
-	/* Link decoration */
-a,
-a:hover,
-a:active,
-a:visited {
-	text-decoration: none;
-	color: #FFFFFF;
+	/* About me section */
+	/* styling */
+	
+#aboutMe-section {
+	text-align: center;
+	margin-bottom: 10vh;
+}
+
+	/* Back To Top Button */
+
+.backToTop {
+	background: #FFFFFF;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	opacity: 0.6;
+	position: fixed;
+	bottom: 20vh;
+	right:3vw;
+	transform: scale(1.6);
+	transition: 0.25s;
+}
+
+.backToTop:hover {
+	transform: scale(2);
 }
 
 	/* Background animation */

@@ -11,17 +11,19 @@ html  {
 	font-family: Tahoma;
 	animation: backgroundColorAnim 30s infinite linear;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+	overflow: hidden !important; /* !important is added to, potentially fix an issue on mobile devices where the page would scroll sideways */
 }
 
 	/* Link decoration */
-a,
-a:hover,
-a:active,
-a:visited {
+.a-Links,
+.a-Links:active,
+.a-Links:visited {
 	text-decoration: 2px underline #FFFFFF;
 	color: #FFFFFF;
-	
+}
+
+.a-Links:hover {
+	opacity: 0.4;
 }
 
 	/* Nav-Bar styling */
@@ -53,8 +55,8 @@ a:visited {
 	apperas on the page */
 
 .landingText {
-	margin-top: 30vh;
-	margin-bottom: 80vh;
+	margin-top: 35vh;
+	margin-bottom: 40vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -73,26 +75,52 @@ a:visited {
 	/* About me section */
 	/* styling */
 	
+.image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+	
 #aboutMe-section {
+	display: inline-block;
+	margin-bottom: 40vh;
+}
+	
+.aboutMe-section-style {
 	text-align: center;
-	margin-bottom: 10vh;
+	margin-bottom: 85vh;
+}
+
+	/* Contact me section */
+	/* styling */
+	
+#contactMe-section {
+	text-align: center;
+	margin-bottom: 40vh;
 }
 
 	/* Back To Top Button */
 
 .backToTop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.4;
 	background: #FFFFFF;
-	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-	opacity: 0.6;
+	color: #000000;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
 	position: fixed;
 	bottom: 20vh;
-	right:3vw;
-	transform: scale(1.6);
+	right:5vw;
 	transition: 0.25s;
 }
 
 .backToTop:hover {
-	transform: scale(2);
+	transform: scale(1.6);
 }
 
 	/* Background animation */

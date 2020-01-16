@@ -18,7 +18,7 @@ html  {
 .a-Links,
 .a-Links:active,
 .a-Links:visited {
-	text-decoration: 2px underline #FFFFFF;
+	text-decoration: none;
 	color: #FFFFFF;
 }
 
@@ -30,33 +30,43 @@ html  {
 
 .nav {
 	display: flex;
-	justify-content: flex-end;
-	width: 102vw;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 3vw;
+	height: 16vh;
 	position: fixed;
-	background: linear-gradient(to right, rgba(6, 51, 172, 0.4), rgba(62, 12, 189, 0.4));
-	padding-top: 1.5vh;
-	padding-bottom: 1.5vh;
-	font-size: 0;
+	background: rgba(0, 0, 0, 0.3);
+	opacity: 0.4;
+	bottom: 50vh;
+	right:4vw;
+	transition: 0.25s;
 }
 
-.aboutMe {
-	border-right: 1px solid #FFFFFF;
-	padding-right: 1vw;
-	font-size: 1rem;
+.backToTop {
+	font-size: 1.6rem;
+	transition: 0.25s;
 }
 
 .contactMe {
-	padding-left: 1vw;
-	margin-right: 3vw;
-	font-size: 1rem;
+	font-size: 1.6rem;
+	transition: 0.25s;
 }
+
+.aboutMe {
+	display: block;
+	background: #FFFFFF;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
 
 	/* The first text that 
 	apperas on the page */
 
 .landingText {
 	margin-top: 35vh;
-	margin-bottom: 40vh;
+	margin-bottom: 20vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -99,34 +109,20 @@ html  {
 	margin-bottom: 40vh;
 }
 
-	/* Back To Top Button */
-
-.backToTop {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	opacity: 0.4;
-	background: #FFFFFF;
-	color: #000000;
-	font-size: 0.8rem;
-	font-weight: 600;
-	text-decoration: none;
-	width: 30px;
-	height: 30px;
-	position: fixed;
-	bottom: 20vh;
-	right:5vw;
-	transition: 0.25s;
-}
-
-.backToTop:hover {
-	transform: scale(1.6);
-}
-
 	/* Background animation */
 
 @keyframes backgroundColorAnim {
 	0% {background-position: 0% 50%;}
 	50% {background-position: 100% 50%;}
 	100% {background-position: 0% 50%;}
+}
+
+	/* Mobile Tweaks */
+	
+@media screen and (max-width: 740px) {
+
+.nav {
+	background: rgba(0, 0, 0, 0);
+}
+
 }

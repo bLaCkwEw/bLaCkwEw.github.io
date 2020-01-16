@@ -11,7 +11,7 @@ html  {
 	font-family: Tahoma;
 	animation: backgroundColorAnim 30s infinite linear;
 	scroll-behavior: smooth;
-	overflow: hidden !important; /* !important is added to, potentially fix an issue on mobile devices where the page would scroll sideways */
+	overflow-x: hidden;
 }
 
 	/* Link decoration */

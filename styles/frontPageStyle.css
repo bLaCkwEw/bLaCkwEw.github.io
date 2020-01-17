@@ -34,30 +34,25 @@ html  {
 	align-items: center;
 	flex-direction: column;
 	width: 3vw;
-	height: 16vh;
+	height: 20vh;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.3);
 	opacity: 0.4;
-	bottom: 50vh;
+	bottom: 45vh;
 	right:4vw;
 	transition: 0.25s;
 }
 
 .backToTop {
 	font-size: 1.6rem;
-	transition: 0.25s;
 }
 
 .contactMe {
 	font-size: 1.6rem;
-	transition: 0.25s;
 }
 
 .aboutMe {
-	display: block;
-	background: #FFFFFF;
-	width: 1.2rem;
-	height: 1.2rem;
+	font-size: 1.6rem;
 }
 
 
@@ -85,24 +80,41 @@ html  {
 	/* About me section */
 	/* styling */
 	
+#aboutMe-section {
+	display: inline-block;
+	margin-bottom: 40vh;
+}
+
+.aboutMe-section-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutMe-section-style {
+	margin-bottom: 65vh;
+	width: 50vw;
+}
+
+.aboutMe-section-style > p,
+.aboutMe-section-style > h2 {
+	text-align: center;
+	margin: 0.2vh;
+}
+
+.aboutMe-section-style > .smile {
+	transform: rotate(90deg);
+	font-size: 1.6rem;
+}
+
+	/* Contact me section */
+	/* styling */
+	
 .image {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 }
-	
-#aboutMe-section {
-	display: inline-block;
-	margin-bottom: 40vh;
-}
-	
-.aboutMe-section-style {
-	text-align: center;
-	margin-bottom: 85vh;
-}
-
-	/* Contact me section */
-	/* styling */
 	
 #contactMe-section {
 	text-align: center;

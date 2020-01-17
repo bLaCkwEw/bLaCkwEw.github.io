@@ -129,7 +129,7 @@ a:focus {
 :root, body {
 	--bg-color: #031634;
 	--txt-color: #e8ddcb;
-	width:100%;
+	width:100vw;
 	height: 97vh;
 	background-color: var(--bg-color);
 	color: var(--txt-color);

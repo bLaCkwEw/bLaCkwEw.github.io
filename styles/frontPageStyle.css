@@ -4,10 +4,10 @@ html  {
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #1858f9, #4400b3);
+	background: linear-gradient(45deg, #1858f9, #4400b3);
 	background-size: 400% 400%;
 	color: #FFFFFF;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: Tahoma;
 	animation: backgroundColorAnim 30s infinite linear;
 	scroll-behavior: smooth;

@@ -9,28 +9,55 @@
 html,
 body {
 	margin: 0 auto;
+	overflow-x: hidden;
 	
 }
 
 .nav-bar {
+	/* Display */
 	display: flex;
 	justify-content: flex-end;
-	align-content: center;
-	padding: 0.5rem 0.5rem;
-	background: red;
+	align-items: center;
 	
+	/* Position */
+	position: fixed;
+	height: 9vh;
+	width: 100vw;
+	
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar-links {
 	color: inherit;
 	margin-right: 2vw;
 	text-decoration: none;
-	
 }
 
 .nav-bar-links:hover,
 .nav-bar-links:focus {
-	text-decoration: underline 0.1rem solid;
+	border-bottom: 0.1rem solid #0099ff;
 	color: #0099ff;
+}
+
+.front-page-image {
+	/* Display */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
+	/* Position */
+	z-index: -5;
+	height: 100vh;
+	width: 100vw;
+	
+	/* Background */
+	background: url(img/photo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.front-page-image-inner {
+	text-align: center;
+	text-shadow: #000 0.1rem 0.1rem 0.3rem;
 }

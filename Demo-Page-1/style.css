@@ -1,6 +1,6 @@
 :root {
-	background: #000000;
-	color: #FFFFFF;
+	background: #FFFFFF;
+	color: #000000;
 	font-size: 24px;
 	font-family: Tahoma;
 
@@ -13,6 +13,8 @@ body {
 	
 }
 
+	/* Nav-Bar */
+
 .nav-bar {
 	/* Display */
 	display: flex;
@@ -21,15 +23,17 @@ body {
 	
 	/* Position */
 	position: fixed;
-	height: 9vh;
+	height: 8vh;
 	width: 100vw;
 	
+	color: #FFFFFF;
+	text-shadow: #000 0.1rem 0.1rem;
 	background: rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar-links {
 	color: inherit;
-	margin-right: 2vw;
+	margin-right: 3vw;
 	text-decoration: none;
 }
 
@@ -39,6 +43,8 @@ body {
 	color: #0099ff;
 }
 
+	/* Landing Image and Text */
+	
 .front-page-image {
 	/* Display */
 	display: flex;
@@ -46,9 +52,10 @@ body {
 	align-items: center;
 	
 	/* Position */
-	z-index: -5;
-	height: 100vh;
+	margin: 0 auto;
+	height: 80vh;
 	width: 100vw;
+	z-index: -5;
 	
 	/* Background */
 	background: url(img/photo.jpg);
@@ -58,6 +65,42 @@ body {
 }
 
 .front-page-image-inner {
+	color: #FFFFFF;
 	text-align: center;
 	text-shadow: #000 0.1rem 0.1rem 0.3rem;
+}
+
+	/* About Section */
+	
+.about-section {
+	/* Dimensions */
+	height: 100vh;
+	width: 100vw;
+	margin-top: 6vh;
+	
+	/* Display */
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.description-text {
+	/* Dimensions */
+	height: 50%;
+	width: 40%;
+	margin-left: 8vw;
+	
+}
+
+.description-img {
+	/* Dimensions */
+	height: 50%;
+	width: 40%;
+	margin-right: 8vw;
+	
+	/* Image */
+	background: url(img/photo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

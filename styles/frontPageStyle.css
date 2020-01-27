@@ -61,7 +61,7 @@ html  {
 
 .landingText {
 	margin-top: 35vh;
-	margin-bottom: 20vh;
+	margin-bottom: 40vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -82,18 +82,19 @@ html  {
 	
 #aboutMe-section {
 	display: inline-block;
-	margin-bottom: 40vh;
+	margin-bottom: 30vh;
 }
 
 .aboutMe-section-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .aboutMe-section-style {
-	margin-bottom: 65vh;
-	width: 50vw;
+	margin-bottom: 60vh;
+	width: 60vw;
 }
 
 .aboutMe-section-style > p,
@@ -102,20 +103,29 @@ html  {
 	margin: 0.2vh;
 }
 
-.aboutMe-section-style > .smile {
-	transform: rotate(90deg);
-	font-size: 1.6rem;
-}
 
 	/* Contact me section */
 	/* styling */
 	
-.image {
+.img-box {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+	
+.img {
+	background: url(/img/blackwew-logo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 }
-	
+
+.underline {
+	text-decoration: underline 0.3vh;
+}
+
 #contactMe-section {
 	text-align: center;
 	margin-bottom: 40vh;
@@ -134,7 +144,11 @@ html  {
 @media screen and (max-width: 740px) {
 
 .nav {
-	background: rgba(0, 0, 0, 0);
+	display: none;
+}
+
+.aboutMe-section-style {
+	width: 90vw;
 }
 
 }

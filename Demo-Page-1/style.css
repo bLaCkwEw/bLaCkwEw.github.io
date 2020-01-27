@@ -1,6 +1,6 @@
 :root {
-	background: #FFFFFF;
-	color: #000000;
+	background: #0E0E18;
+	color: #FFF;
 	font-size: 24px;
 	font-family: Tahoma;
 
@@ -13,6 +13,10 @@ body {
 	
 }
 
+.center {
+	text-align: center;
+}
+
 	/* Nav-Bar */
 
 .nav-bar {
@@ -22,13 +26,27 @@ body {
 	align-items: center;
 	
 	/* Position */
-	position: fixed;
 	height: 8vh;
 	width: 100vw;
 	
 	color: #FFFFFF;
 	text-shadow: #000 0.1rem 0.1rem;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgb(0, 0, 0);
+}
+
+.nav-bar::before,
+.nav-bar::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	background: #000;
+	width: 5vw;
+	height: 300vh;
+	z-index: -10;
+}
+
+.nav-bar::after {
+	left: 0;
 }
 
 .nav-bar-links {
@@ -65,9 +83,9 @@ body {
 }
 
 .front-page-image-inner {
-	color: #FFFFFF;
+	color: inherit;
 	text-align: center;
-	text-shadow: #000 0.1rem 0.1rem 0.3rem;
+	text-shadow: #000 0.1rem 0.1rem 0.2rem;
 }
 
 	/* About Section */
@@ -96,7 +114,7 @@ body {
 	/* Dimensions */
 	height: 50%;
 	width: 40%;
-	margin-right: 8vw;
+	margin-right: 9vw;
 	
 	/* Image */
 	background: url(img/photo.jpg);

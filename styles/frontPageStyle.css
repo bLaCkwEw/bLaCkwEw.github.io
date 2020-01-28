@@ -26,42 +26,12 @@ html  {
 	opacity: 0.4;
 }
 
-	/* Nav-Bar styling */
-
-.nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 3vw;
-	height: 20vh;
-	position: fixed;
-	background: rgba(0, 0, 0, 0.3);
-	opacity: 0.4;
-	bottom: 45vh;
-	right:4vw;
-	transition: 0.25s;
-}
-
-.backToTop {
-	font-size: 1.6rem;
-}
-
-.contactMe {
-	font-size: 1.6rem;
-}
-
-.aboutMe {
-	font-size: 1.6rem;
-}
-
-
 	/* The first text that 
 	apperas on the page */
 
 .landingText {
 	margin-top: 35vh;
-	margin-bottom: 40vh;
+	margin-bottom: 60vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -79,21 +49,16 @@ html  {
 
 	/* About me section */
 	/* styling */
-	
-#aboutMe-section {
-	display: inline-block;
-	margin-bottom: 30vh;
-}
 
 .aboutMe-section-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin-bottom: 60vh;
 }
 
 .aboutMe-section-style {
-	margin-bottom: 60vh;
 	width: 60vw;
 }
 
@@ -126,9 +91,9 @@ html  {
 	text-decoration: underline 0.3vh;
 }
 
-#contactMe-section {
+.contactMe-section {
 	text-align: center;
-	margin-bottom: 40vh;
+	margin-bottom: 30vh;
 }
 
 	/* Background animation */
@@ -142,10 +107,6 @@ html  {
 	/* Mobile Tweaks */
 	
 @media screen and (max-width: 740px) {
-
-.nav {
-	display: none;
-}
 
 .aboutMe-section-style {
 	width: 90vw;

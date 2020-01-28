@@ -1,55 +1,55 @@
 @font-face {
 	font-family: JetBrainsMono;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf);
 	font-style: normal;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-Bold;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-Bold.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf);
 	font-style: bold;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-ExtraBold;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf);
 	font-style: bold;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-Medium;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-Medium.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-Medium.ttf);
 	font-style: normal;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-Italic;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-Italic.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-Italic.ttf);
 	font-style: italic;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-Medium-Italic;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-Medium-Italic.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-Medium-Italic.ttf);
 	font-style: italic;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-Bold-Italic;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-Bold-Italic.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-Bold-Italic.ttf);
 	font-style: italic;
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: JetBrainsMono-ExtraBold-Italic;
-	src: url(../fonts/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.ttf);
+	src: url(/fonts/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.ttf);
 	font-style: normal;
 	font-weight: 100;
 }

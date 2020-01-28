@@ -26,16 +26,18 @@ body {
 	align-items: center;
 	
 	/* Position */
+	position: fixed;
 	height: 8vh;
 	width: 100vw;
 	
 	color: #FFFFFF;
 	text-shadow: #000 0.1rem 0.1rem;
-	background: rgb(0, 0, 0);
+	background: rgb(0, 0, 0, 0.2);
+	
 }
 
-.nav-bar::before,
-.nav-bar::after {
+.side-bars::before,
+.side-bars::after {
 	content: "";
 	position: absolute;
 	right: 0;
@@ -43,9 +45,10 @@ body {
 	width: 5vw;
 	height: 300vh;
 	z-index: -10;
+	
 }
 
-.nav-bar::after {
+.side-bars::after {
 	left: 0;
 }
 
@@ -53,12 +56,19 @@ body {
 	color: inherit;
 	margin-right: 3vw;
 	text-decoration: none;
+	
 }
 
 .nav-bar-links:hover,
 .nav-bar-links:focus {
 	border-bottom: 0.1rem solid #0099ff;
 	color: #0099ff;
+	
+}
+
+#about,
+#price {
+	margin-bottom: 7vh;
 }
 
 	/* Landing Image and Text */
@@ -80,6 +90,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 }
 
 .front-page-image-inner {
@@ -92,7 +103,7 @@ body {
 	
 .about-section {
 	/* Dimensions */
-	height: 100vh;
+	height: 50vh;
 	width: 100vw;
 	margin-top: 6vh;
 	
@@ -102,23 +113,47 @@ body {
 	
 }
 
-.description-text {
-	/* Dimensions */
-	height: 50%;
-	width: 40%;
-	margin-left: 8vw;
+.about-section-2 {
+	flex-direction: row-reverse;
 	
 }
 
-.description-img {
+.description-text,
+.description-img,
+.description-text-2,
+.description-img-2 {
 	/* Dimensions */
-	height: 50%;
+	height: 90%;
 	width: 40%;
+	
+}
+
+.description-text {
+	margin-left: 8vw;
+}
+
+.description-text-2 {
+	margin-right: 9vw;
+}
+
+.description-img {
 	margin-right: 9vw;
 	
 	/* Image */
-	background: url(img/photo.jpg);
+	background: red /** url(your link) **/;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
+}
+
+.description-img-2 {
+	margin-left: 8vw;
+	
+	/* Image */
+	background: red /** url(your link) **/;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }

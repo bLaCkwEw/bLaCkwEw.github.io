@@ -10,7 +10,6 @@ html  {
 	font-size: 24px;
 	font-family: JetBrainsMono-Medium;
 	animation: backgroundColorAnim 30s infinite linear;
-	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 
@@ -31,7 +30,7 @@ html  {
 
 .landingText {
 	margin-top: 35vh;
-	margin-bottom: 60vh;
+	margin-bottom: 35vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -45,6 +44,21 @@ html  {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
+
+.scroll-indicator {
+	width: 100vw;
+	text-align: center;
+	font-size: 0.8rem;
+	margin-bottom: 25vh;
+	animation:fade-out alternate 750ms 3;
+	opacity: 0;
+}
+
+@keyframes fade-out {
+	0% {opacity: 1;}
+	25% {opacity: 1;}
+	100% {opacity: 0;}
 }
 
 	/* About me section */

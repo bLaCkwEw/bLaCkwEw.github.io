@@ -3,14 +3,15 @@
 	color: #FFF;
 	font-size: 24px;
 	font-family: Tahoma;
+        scroll-behavior: smooth;
 
 }
 
 html,
 body {
 	margin: 0 auto;
-	overflow-x: hidden;
-        scroll-behavior: smooth;
+	overflow-x:hidden;
+    
 	
 }
 

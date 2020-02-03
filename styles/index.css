@@ -6,10 +6,10 @@ html  {
 	height: 100vh;
 	background: linear-gradient(45deg, #1858f9, #4400b3);
 	background-size: 400% 400%;
+	animation: backgroundColorAnim 30s infinite linear;
 	color: #FFFFFF;
 	font-size: 24px;
 	font-family: JetBrainsMono-Medium;
-	animation: backgroundColorAnim 30s infinite linear;
 	overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@ html  {
 .a-Links,
 .a-Links:active,
 .a-Links:visited {
-	text-decoration: none;
+	text-decoration: underline 2.5px;
 	color: #FFFFFF;
 }
 
@@ -30,7 +30,7 @@ html  {
 
 .landingText {
 	margin-top: 35vh;
-	margin-bottom: 35vh;
+	margin-bottom: 30vh;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -50,15 +50,15 @@ html  {
 	width: 100vw;
 	text-align: center;
 	font-size: 0.8rem;
-	margin-bottom: 25vh;
-	animation:fade-out alternate 750ms 3;
-	opacity: 0;
+	margin-bottom: 30vh;
+	animation:fade-out linear 2500ms infinite;
+	opacity: 1;
 }
 
 @keyframes fade-out {
 	0% {opacity: 1;}
-	25% {opacity: 1;}
-	100% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 	/* About me section */
@@ -99,10 +99,6 @@ html  {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-}
-
-.underline {
-	text-decoration: underline 0.3vh;
 }
 
 .contactMe-section {

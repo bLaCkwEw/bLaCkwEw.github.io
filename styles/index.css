@@ -3,7 +3,7 @@ body,
 html  {
 	margin: 0;
 	width: 100vw;
-	height: 100vh;
+	height: auto;
 	background: linear-gradient(45deg, #1858f9, #4400b3);
 	background-size: 400% 400%;
 	animation: backgroundColorAnim 30s infinite linear;
@@ -11,6 +11,14 @@ html  {
 	font-size: 24px;
 	font-family: JetBrainsMono-Medium;
 	overflow-x: hidden;
+}
+
+	/* Background animation */
+
+@keyframes backgroundColorAnim {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
 }
 
 	/* Link decoration */
@@ -106,12 +114,28 @@ html  {
 	margin-bottom: 30vh;
 }
 
-	/* Background animation */
+	/* Newsletter Styling */
+	
+.btndown-form {
+	background: rgba(100, 0, 200, 0.7);
+	margin: 0 auto;
+}
 
-@keyframes backgroundColorAnim {
-	0% {background-position: 0% 50%;}
-	50% {background-position: 100% 50%;}
-	100% {background-position: 0% 50%;}
+.btndown-form-label {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.btndown-form-input {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.btndown-form-btn {
+	width: auto;
+	margin: 0 auto;
 }
 
 	/* Mobile Tweaks */

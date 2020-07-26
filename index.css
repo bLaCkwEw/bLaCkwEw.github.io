@@ -21,7 +21,7 @@ a:hover {
 
 .titleBar {
 	width: 100%;
-	height: 6vh;
+	height: 38px;
 	background: #fff;
 }
 
@@ -95,10 +95,6 @@ a:hover {
 		position: relative;
 		margin-top: 2vh;
 		margin-left: 2vw;
-	}
-	
-	.titleBar {
-	height: 5vh;
 	}
 	
 	.titleBarIcon, .titleBarText {

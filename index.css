@@ -1,0 +1,112 @@
+:root {
+	background: #000;
+	color: #16C60C;
+	font-family: Consolas;
+	font-size: 24px;
+}
+
+body {
+	margin: 0;
+}
+
+a, a:visited, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #e939f3;
+	background: #f3f3f3;
+}
+
+.titleBar {
+	width: 100%;
+	height: 6vh;
+	background: #fff;
+}
+
+.titleBarIcon, .titleBarText {
+	color: #000;
+	position: absolute;
+	top: 0.25rem;
+}
+
+.titleBarIcon {
+	/* Background img and stuff */
+	background-image: url(https://blackwew.github.io/img/cmd_icon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* Dimesions */
+	width: 30px;
+	height: 25px;
+	/* Position */
+	left: 0.25rem;
+}
+
+.titleBarText {
+	left: 1.75rem;
+}
+
+.windowText p {
+	display: inline;
+	margin: 0;
+}
+
+.textDescription {
+	position: absolute;
+	left: 15vw;
+}
+
+.blinkAnim {
+	background: white;
+	width: 0.8rem;
+	height: 0.25rem;
+	display: inline-block;
+	/* Animation */
+	animation: blink 1500ms infinite;
+}
+
+@keyframes blink{
+    0%{     background: #fff;    }
+    49%{    background: #fff; }
+    60%{    background: transparent; }
+    99%{    background:transparent;  }
+    100%{   background: #fff;    }
+}
+
+@media screen and (max-width: 749px) {
+	:root {
+		font-size: 18px;
+	}
+	
+	.mobileTweaks p {
+		display: inline-block;
+		margin-bottom: 4vh;
+		left: 0;
+	}
+	
+	.mobileTweaks p:before {
+		content: "--- ";
+	}
+	
+	.textDescription {
+		display: inline-block;
+		position: relative;
+		margin-top: 2vh;
+		margin-left: 2vw;
+	}
+	
+	.titleBar {
+	height: 5vh;
+	}
+	
+	.titleBarIcon, .titleBarText {
+	top: 0.5rem;
+	}
+	
+	.titleBarText {
+	left: 2.2rem;
+	}
+	
+}

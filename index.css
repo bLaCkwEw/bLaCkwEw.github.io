@@ -1,39 +1,43 @@
-:root {
-	background: #000;
-	color: #16C60C;
+/* Adds the Consolas font to the file */
+@font-face {
 	font-family: Consolas;
-	font-size: 24px;
+	src: url(Font/Consolas.ttf);
+	font-style: normal;
+	font-weight: 100;
 }
 
-body {
+:root {
+	background: #000; /** Black background. **/
+	color: #16C60C; /** Green font color. **/
+	font-family: Consolas; /** The font CMD uses. **/
+	font-size: 24px; /** Font size that I found works best. Feel free to change it. **/
+}
+
+/* Sets the outer margins to 0 */
+body, html, p {
 	margin: 0;
 }
 
-a, a:visited, a:focus, a:active {
-	text-decoration: none;
-	color: inherit;
-}
-
-a:hover {
-	color: #e939f3;
-	background: #f3f3f3;
-}
-
-.titleBar {
+/* Titlebar  */
+header {
 	width: 100%;
 	height: 38px;
 	background: #fff;
-}
-
-.titleBarIcon, .titleBarText {
 	color: #000;
-	position: absolute;
-	top: 0.25rem;
 }
 
-.titleBarIcon {
-	/* Background img and stuff */
-	background-image: url(https://blackwew.github.io/img/cmd_icon.png);
+/* Adds the text "Command Prompt" */
+header:before {
+	content: "Command Prompt";
+	position: absolute;
+	top: 0.2rem;
+	left: 1.8rem;
+}
+
+/* CMD Icon */
+.cmdIcon {
+	/* Sets the background image */
+	background-image: url(img/cmd_icon.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -41,21 +45,34 @@ a:hover {
 	width: 30px;
 	height: 25px;
 	/* Position */
+	position: absolute;
+	top: 0.2rem;
 	left: 0.25rem;
 }
 
-.titleBarText {
-	left: 1.75rem;
+/* Makes the text selection look like the one in CMD */
+::selection, ::-moz-selection {
+	color: #e939f3;
+	background: #f3f3f3;
 }
 
-.windowText p {
-	display: inline;
-	margin: 0;
+/* Styling for "a" tags */
+a, a:hover, a:active, a:focus, a:visited {
+	text-decoration: underline;
+	color: inherit;
 }
 
-.textDescription {
-	position: absolute;
-	left: 15vw;
+a:hover {
+	color: #767676;
+	
+}
+
+span {
+	margin-left: 5vw;
+}
+
+.bottomMargin {
+	margin-bottom: 1rem;
 }
 
 .blinkAnim {
@@ -73,36 +90,4 @@ a:hover {
     60%{    background: transparent; }
     99%{    background:transparent;  }
     100%{   background: #fff;    }
-}
-
-@media screen and (max-width: 749px) {
-	:root {
-		font-size: 18px;
-	}
-	
-	.mobileTweaks p {
-		display: inline-block;
-		margin-bottom: 4vh;
-		left: 0;
-	}
-	
-	.mobileTweaks p:before {
-		content: "--- ";
-	}
-	
-	.textDescription {
-		display: inline-block;
-		position: relative;
-		margin-top: 2vh;
-		margin-left: 2vw;
-	}
-	
-	.titleBarIcon, .titleBarText {
-	top: 0.5rem;
-	}
-	
-	.titleBarText {
-	left: 2.2rem;
-	}
-	
 }

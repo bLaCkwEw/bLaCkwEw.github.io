@@ -78,7 +78,7 @@ span {
 /* Makes lists look somewhat like the TREE command in CMD */
 ul {
   list-style: none;
-  margin-left: 0;
+  margin: 0;
   padding-left: 0;
 }
 

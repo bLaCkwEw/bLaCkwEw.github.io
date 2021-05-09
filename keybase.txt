@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/blackwew
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://fuckchro.me
+  * I am blackwew (https://keybase.io/blackwew) on keybase.
+  * I have a public key ASBhleWPzCC7XngoRUOcK5e_HIL0dmfT6XKwLDVGVLL6lAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208a3d61ed2873e86da1fd817657cb90f7d61f611adbf34b447921b83e142be5a70a",
+      "host": "keybase.io",
+      "kid": "01206195e58fcc20bb5e782845439c2b97bf1c82f47667d3e972b02c354654b2fa940a",
+      "uid": "a6effb3dc6ced9ef81097a28381ce419",
+      "username": "blackwew"
+    },
+    "merkle_root": {
+      "ctime": 1620563447,
+      "hash": "f52838b261223f41cb12ff4ceb9199a36c63c8ab9f7982eb76f5ce789c2f47d8f8f8c3872ef67e7de39deb5c79a802844eca2206a0ffc2e6427e5d3be3fa9fd5",
+      "hash_meta": "dc88fedc019c90a6eeafaddc882f312ccf35fce3abfca21fdad6560487bc1914",
+      "seqno": 19883932
+    },
+    "service": {
+      "entropy": "9hZ9WiliGii/ovmgthTyyAHw",
+      "hostname": "fuckchro.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1620563467,
+  "expire_in": 504576000,
+  "prev": "e967deec0ebadf46718502e1e0c36132f4388edb795e15cd65370e8a13e7c120",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYZXlj8wgu154KEVDnCuXvxyC9HZn0+lysCw1RlSy+pQKp3BheWxvYWTESpcCDcQg6Wfe7A6630ZxhQLh4MNhMvQ4jtt5XhXNZTcOihPnwSDEIOd2ap8MOpp7R3JrinRK2SVRDerl9xmb/MxFasHDifOFAgHCo3NpZ8RAIh0B0F5YYnG07izXQXsDZt/uvXStDAqoqo83ucL5SLuB5WH49AWkw1FTgBy+RxZnOmLM4aWe6WXN5joCHlEoCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBd2Ss983PTrZ6DYvgv1vjMNf+quEm0JfXKBZxtUNaKko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/blackwew
+
+==================================================================
